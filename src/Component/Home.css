@@ -1,0 +1,69 @@
+.home_img{
+    background: url(../AboutMe/dhaval.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px hsla(271, 81%, 56%, 0.793);
+    order: 1;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    animation: profile_animate 8s ease-in-out infinite 1s;
+    flex-shrink: 0;
+}
+
+@keyframes profile_animate {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+@media screen and (min-width: 200px) {
+    .home_img {
+        order: initial;
+        justify-self: initial;
+    }
+
+    .home_img {
+        box-shadow: inset 0 0 0 9px hsla(271, 81%, 56%, 0.793);
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .home_img {
+        order: 1;
+    }
+
+    .home_img {
+        box-shadow: inset 0 0 0 9px hsla(271, 81%, 56%, 0.793);
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home_img {
+        box-shadow: inset 0 0 0 9px hsla(271, 81%, 56%, 0.793);
+        width: 270px;
+        height: 270px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .home_img {
+        box-shadow: inset 0 0 0 9px hsla(271, 81%, 56%, 0.793);
+        width: 320px;
+        height: 320px;
+    }
+}
+    
